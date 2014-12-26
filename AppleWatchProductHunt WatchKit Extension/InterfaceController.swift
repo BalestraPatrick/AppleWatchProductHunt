@@ -31,13 +31,13 @@ class InterfaceController: WKInterfaceController {
             "grant_type" : "client_credentials"];
         
         Alamofire.request(.POST, "https://api.producthunt.com/v1/oauth/token", parameters: parameters).responseJSON {(request, response, JSON, error) in
-            if (error == nil) {
+            if (error == nil && response?.statusCode == 200) {
                 if let JSON = JSON as? NSDictionary {
                     let token = JSON["access_token"] as? NSString
                     self.requestTodayHunts(token!)
                 }
             } else {
-                println(error)
+                println(response)
             }
         }
     }
@@ -53,12 +53,13 @@ class InterfaceController: WKInterfaceController {
         
         let manager = Alamofire.Manager.sharedInstance
         let request = manager.request(mutableURLRequest).responseJSON { (request, response, JSON, error) in
-            if (error == nil) {
+            if (error == nil && response?.statusCode == 200) {
                 if let JSON = JSON as? NSDictionary {
-                    println(JSON)
                     let hunts = JSON["posts"] as? NSArray
                     self.loadHuntsTable(hunts!)
                 }
+            } else {
+                println(response)
             }
         }
     }
