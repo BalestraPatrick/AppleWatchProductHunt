@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+    </dependencies>
+    <scenes>
+        <!--PH-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="PH" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchProductHunt_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" layout="vertical" id="oor-y6-Jsu">
+                            <items>
+                                <tableRow identifier="Hunt" id="Jbu-XE-ybp" customClass="HuntTableRowController" customModule="AppleWatchProductHunt_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" layout="vertical" animationDuration="1" id="nFw-Pt-SwB">
+                                        <items>
+                                            <group width="1" alignment="left" id="HkH-YA-Ba5">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="228" numberOfLines="0" id="zvr-qu-2IS">
+                                                        <color key="textColor" red="0.81176470588235294" green="0.24705882352941178" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </label>
+                                                    <label width="89" alignment="left" verticalAlignment="center" text="7 Minute Workout" numberOfLines="0" id="LM8-mF-u7W">
+                                                        <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <group alignment="left" verticalAlignment="bottom" id="s90-ZC-G97">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="Scientific 7 Minute Workout app from the New York Times" numberOfLines="0" minimumScaleFactor="0.20000000000000015" id="oAn-ii-8nY">
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="huntTitle" destination="LM8-mF-u7W" id="PKu-IZ-I6Q"/>
+                                        <outlet property="taglineLabel" destination="oAn-ii-8nY" id="DMc-q0-yQ3"/>
+                                        <outlet property="votesLabel" destination="zvr-qu-2IS" id="CQS-6J-Sd4"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="huntsTable" destination="oor-y6-Jsu" id="Y03-Ms-515"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.81176470590000005" green="0.2470588235" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+</document>
