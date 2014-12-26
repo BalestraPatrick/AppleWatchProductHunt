@@ -10,14 +10,14 @@
 	<string>AppleWatchProductHunt</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>AD164C09EE81C493EA3C30AB7E57305C89B9B8D9</key>
+		<key>945525A92284A74E3654F3071BB2FE13A9FEC3CB</key>
 		<string>https://github.com/BalestraPatrick/AppleWatchProductHunt.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>AppleWatchProductHunt.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>AD164C09EE81C493EA3C30AB7E57305C89B9B8D9</key>
+		<key>945525A92284A74E3654F3071BB2FE13A9FEC3CB</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>AD164C09EE81C493EA3C30AB7E57305C89B9B8D9</string>
+	<string>945525A92284A74E3654F3071BB2FE13A9FEC3CB</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AD164C09EE81C493EA3C30AB7E57305C89B9B8D9</string>
+			<string>945525A92284A74E3654F3071BB2FE13A9FEC3CB</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AppleWatchProductHunt</string>
 		</dict>
