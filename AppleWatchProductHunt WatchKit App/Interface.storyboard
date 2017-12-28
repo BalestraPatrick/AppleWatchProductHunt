@@ -1,34 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
     <scenes>
         <!--PH-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="PH" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchProductHunt_WatchKit_App" customModuleProvider="target">
+                <controller title="PH" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchProductHunt_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <table alignment="left" layout="vertical" id="oor-y6-Jsu">
+                        <table alignment="left" id="oor-y6-Jsu">
                             <items>
                                 <tableRow identifier="Hunt" id="Jbu-XE-ybp" customClass="HuntTableRowController" customModule="AppleWatchProductHunt_WatchKit_Extension">
-                                    <group key="rootItem" width="1" alignment="left" layout="vertical" animationDuration="1" id="nFw-Pt-SwB">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" animationDuration="1" layout="vertical" id="nFw-Pt-SwB">
                                         <items>
                                             <group width="1" alignment="left" id="HkH-YA-Ba5">
                                                 <items>
-                                                    <label alignment="left" verticalAlignment="center" text="228" numberOfLines="0" id="zvr-qu-2IS">
-                                                        <color key="textColor" red="0.81176470588235294" green="0.24705882352941178" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <label width="36" alignment="left" text="228 ▲" textAlignment="center" numberOfLines="2" minimumScaleFactor="0.69999999999999996" id="zvr-qu-2IS">
+                                                        <color key="textColor" red="0.81176470588235294" green="0.24705882352941178" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </label>
-                                                    <label width="89" alignment="left" verticalAlignment="center" text="7 Minute Workout" numberOfLines="0" id="LM8-mF-u7W">
+                                                    <label alignment="left" text="YC New Year's B2B Buying Guide" textAlignment="left" numberOfLines="0" minimumScaleFactor="0.0" id="LM8-mF-u7W">
                                                         <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                                     </label>
                                                 </items>
                                             </group>
-                                            <group alignment="left" verticalAlignment="bottom" id="s90-ZC-G97">
+                                            <group width="1" height="50" alignment="left" verticalAlignment="center" id="s90-ZC-G97">
                                                 <items>
-                                                    <label alignment="left" verticalAlignment="center" text="Scientific 7 Minute Workout app from the New York Times" numberOfLines="0" minimumScaleFactor="0.20000000000000015" id="oAn-ii-8nY">
-                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <label alignment="center" verticalAlignment="bottom" text="Scientific 7 Minute Workout app from the New York Times" numberOfLines="0" minimumScaleFactor="0.20000000000000015" id="oAn-ii-8nY">
+                                                        <color key="textColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                                     </label>
                                                 </items>
@@ -44,6 +48,15 @@
                             </items>
                         </table>
                     </items>
+                    <menu key="menu" id="7ed-PE-Lum">
+                        <items>
+                            <menuItem title="Reload" icon="repeat" id="Fu2-Zc-zge">
+                                <connections>
+                                    <action selector="reload" destination="AgC-eL-Hgc" id="jzG-ZO-8Kf"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="huntsTable" destination="oor-y6-Jsu" id="Y03-Ms-515"/>
                     </connections>
@@ -51,5 +64,5 @@
             </objects>
         </scene>
     </scenes>
-    <color key="tintColor" red="0.81176470590000005" green="0.2470588235" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.81176470590000005" green="0.2470588235" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

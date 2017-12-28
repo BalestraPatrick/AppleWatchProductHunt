@@ -1,0 +1,9 @@
+{
+  "commitish" : "4.6.0",
+  "watchOS" : [
+    {
+      "hash" : "d26f3293d7f0f0b26b55b91dbeef7049499c4ca65e1944e1c42a24053c2b83c4",
+      "name" : "Alamofire"
+    }
+  ]
+}
