@@ -1,6 +1,6 @@
 AppleWatchProductHunt
 =====================
-<img src="sc1.png" width="350px"><img src="sc2.png" width="350px"><img src="sc3.png" width="350px">
+<img src="sc1.png" width="275"><img src="sc2.png" width="275"><img src="sc3.png" width="275">
 ## Features
 - An Apple watchapp written in Swift that displays the top posts from Product Hunt.
 - Demonstrates how to use <a href="https://github.com/Alamofire/Alamofire" target="_blank">Alamofire</a> to make network requests.
