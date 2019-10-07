@@ -1,9 +1,31 @@
 {
-  "commitish" : "4.6.0",
+  "Mac" : [
+    {
+      "name" : "Alamofire",
+      "hash" : "f96d8da6d4282a19a82db75dbc85ca912dd5a453504e1d5bbd47baea2b597759",
+      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+    }
+  ],
   "watchOS" : [
     {
-      "hash" : "d26f3293d7f0f0b26b55b91dbeef7049499c4ca65e1944e1c42a24053c2b83c4",
-      "name" : "Alamofire"
+      "name" : "Alamofire",
+      "hash" : "87e083f97ca4d0064c386661d40fc21ffb2df532a7bd48f02f4855ea3dea7220",
+      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "Alamofire",
+      "hash" : "f25af98bcc5af832b9f3164e8f677ace65fae13f544b4e1c6b179be6833d4b9e",
+      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+    }
+  ],
+  "commitish" : "4.9.0",
+  "iOS" : [
+    {
+      "name" : "Alamofire",
+      "hash" : "af980b06b1ae53cc6856015cf28409285f068e1275a1f839905f07cd0f8a0bd1",
+      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     }
   ]
 }

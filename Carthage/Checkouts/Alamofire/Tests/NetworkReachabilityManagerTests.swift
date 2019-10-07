@@ -1,7 +1,7 @@
 //
 //  NetworkReachabilityManagerTests.swift
 //
-//  Copyright (c) 2014-2017 Alamofire Software Foundation (http://alamofire.org/)
+//  Copyright (c) 2014 Alamofire Software Foundation (http://alamofire.org/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -146,6 +146,32 @@ class NetworkReachabilityManagerTestCase: BaseTestCase {
 
         // Then
         XCTAssertEqual(networkReachabilityStatus, .reachable(.ethernetOrWiFi))
+    }
+
+    func testThatZeroManagerIsNotifiedWhenStoppedAndStarted() {
+        // Given
+        let manager = NetworkReachabilityManager()
+        let first = expectation(description: "first listener notified")
+        let second = expectation(description: "second listener notified")
+
+        // When
+        manager?.listener = { _ in
+            first.fulfill()
+        }
+        manager?.startListening()
+
+        wait(for: [first], timeout: timeout)
+
+        manager?.stopListening()
+        manager?.listener = { _ in
+            second.fulfill()
+        }
+        manager?.startListening()
+
+        wait(for: [second], timeout: timeout)
+
+        // Then
+        XCTAssertEqual(manager?.networkReachabilityStatus, .reachable(.ethernetOrWiFi))
     }
 
     // MARK: - Tests - Network Reachability Status
