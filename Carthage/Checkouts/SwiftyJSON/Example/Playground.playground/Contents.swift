@@ -29,7 +29,6 @@ let jsonString = String(data: jsonData!, encoding: .utf8)
 ### Initialization
 
 */
-import SwiftyJSON
 
 let json1 = try? JSON(data: jsonData!)
 /*:
@@ -413,4 +412,3 @@ let stringRepresentionJson: JSON = JSON(stringRepresentationDict)
 let representation = stringRepresentionJson.rawString([.castNilToNSNull: true])
 print(representation!)
 // representation is "{\"1\":2,\"2\":\"two\",\"3\":null}", which represents {"1":2,"2":"two","3":null}
-
